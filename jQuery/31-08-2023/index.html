@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <span>Label 1</span>
+        <input type="number" id="label-1"> <br> <br>
+        <span>Label 2</span>
+        <input type="number" id="label-2"> <br> <br>
+        <label for="dropdown">Select operation:</label>
+        <select name="dropdown" id="dropdown">
+            <option value="add">Addition (+)</option>
+            <option value="sub">Subtraction (-)</option>
+            <option value="mul">Multiplication (*)</option>
+            <option value="div">Division (/)</option>
+        </select> <br> <br>
+        <label for="id-3">Answer</label>
+        <input type="text" id="id-3"> <br> <br>
+        <button type="button" onclick="calculation()">Click here</button>
+    </form> <br>
+    <table id="calculationTable" border="2" style="border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>Value 1</th>
+                <th>Value 2</th>
+                <th>Operation</th>
+                <th>Result</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+    <script src="index.js"></script>
+</body>
+
+</html>

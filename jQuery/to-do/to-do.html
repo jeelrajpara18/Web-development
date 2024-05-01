@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: rgb(106, 157, 173);
+    }
+    .container{
+        width: 50%;
+        margin: auto;
+        margin-top: 5px;
+        background-color: rgb(136, 84, 136);
+        padding: 10px;
+    }
+    input{
+       padding: 8px;
+       border-radius: 10px;
+       border: none;
+    }
+    button{
+        border: none;
+        padding: 8px;
+        border-radius: 10px;
+    }
+    #input-box{
+        padding: 10px;
+    }
+    ol{
+        padding-left:17px ;
+    }
+    ol li{
+        padding: 5px;
+    }
+    li{
+        cursor: pointer;
+    }
+    .strike{
+        text-decoration: line-through;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>To-Do List </h1>
+        <p> <em> Click to add a task and Double click to cross a task off. </em></p>
+        <div id="input-box">
+                <form action="" id="input-form">
+                    <input type="text" id="input-text" placeholder="Add Your Task" name="listItem">
+                    <button type="button" id="btn">Submit</button>
+                    <ol></ol>
+                </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="to-do.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(164, 160, 95);
+}
+.container{
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+    background-color: #555;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.cal-row{
+    text-align: center;
+}
+.screen{
+    background-color: #d3d6aa;
+    width: 83%;
+    margin: auto;
+    border-radius: 10px;
+    text-align: right;
+    padding: 10px;
+}
+.button{
+    display: inline-block;
+    border: 1px solid #555;
+    background-color: #eee;
+    padding: 10px 0;
+    margin: 7px 5px;
+    border-radius: 10px;
+    width: 50px;
+    font-weight:bold ;
+}
+.expand{
+    width: 112px;
+}
