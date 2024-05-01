@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .container {
+        background: url(https://images.unsplash.com/photo-1686661589184-b9ced5f4be1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE4fE04alZiTGJUUndzfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=600&q=60) center;
+        height: 100%;
+        background-size: 100%;
+    }
+
+    .tittle {
+        text-align: center;
+        margin-bottom: 12px;
+        font-size: 30px;
+        color: #fff;
+    }
+
+    .box-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+        color: #fff;
+        font-size: 22px;
+        margin-top: 2rem;
+    }
+
+    input {
+        display: block;
+        height: 70px;
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 15px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1 class="tittle">We are coming soon!</h1>
+        <div class="tittle" id="endDate">25 July 2023 2:40:00 PM</div>
+        <form action="">
+            <div class="box-main">
+                <div>
+                    <input type="text" readonly value="0"> <br>
+                    <label for="">Days</label>
+                </div>
+                <div>
+                    <input type="text" readonly value="0"> <br>
+                    <label for="">Hours</label>
+                </div>
+                <div>
+                    <input type="text" readonly value="0"> <br>
+                    <label for="">Minutes</label>
+                </div>
+                <div>
+                    <input type="text" readonly value="0"> <br>
+                    <label for="">Seconds</label>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <script>
+        let endDate = '2023-07-25 18:30:00'
+        document.getElementById('endDate').innerText = endDate;
+        let inputs = document.getElementsByTagName('input');
+
+        function getCountDown() {
+            let end = new Date(endDate);
+            let now = new Date();
+
+            let diff = (end - now) / 1000;
+            let days = Math.floor(diff / 3600 / 24)
+            let hours = Math.floor(diff / 3600) % 24;
+            let minutes = Math.floor(diff / 60) % 60;
+            let seconds = Math.floor(diff) % 60
+
+            if (diff < 0) return;
+            inputs[0].value = days;
+            inputs[1].value = hours;
+            inputs[2].value = minutes;
+            inputs[3].value = seconds;
+        }
+        getCountDown();
+        setInterval(() => {
+            getCountDown();
+        }, 1000)
+
+    </script>
+</body>
+
+</html>

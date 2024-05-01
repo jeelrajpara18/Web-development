@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        max-width: 100vw;
+        max-height: 100vh;
+        background-color: black;
+        color: white;
+    }
+    #main-form{
+        display: flex;
+        justify-content: space-around;
+        margin-top:5px;
+        font-size: 20px;
+    }
+    #click{
+        padding: 10px;
+        margin-top: 20px;
+        border: none;
+        background-color: white;
+        color: black;
+    }
+    #main-table {
+        width: 80%;
+        margin: auto;
+        padding: 10px;
+        border: 1px solid white;
+        margin-top:20px;
+        text-align: center;
+    }
+    .hidden{
+        display:none;
+    }
+    table{
+        border-collapse: collapse;
+    }
+    button{
+        padding: 5px;
+        border: none;
+        width: 100%;
+        background-color: black;
+        color: white;
+    }
+    input,
+    select {
+        display: block;
+        margin-top: 5px;
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <form action="" id="main-form">
+        <div class="product">
+            <label for="product-dropdown">Product</label>
+            <select name="product" id="product-dropdown" required>
+                <option value="1">Select Product</option>
+            </select>
+        </div>
+        <div class="quantity">
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="quantity" required>
+        </div>
+        <div class="price">
+            <label for="price">Price</label>
+            <input type="number" id="price" name="quantity" min="1">
+        </div>
+        <div class="total-main">
+            <label for="total">Total</label>
+            <input type="text" id="total">
+        </div>
+        <div class="button">
+            <button id="click">Click here</button>
+        </div>
+    </form>
+    <table id="main-table" border="1" class="hidden">
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+            <th>Edit</th>
+            <th>Remove</th>
+        </tr>
+        <tbody id="tbody"></tbody>
+    </table>
+    <script src="index.js"></script>
+</body>
+</html>

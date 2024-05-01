@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: linear-gradient(125deg, rgb(41, 138, 137), rgb(78, 78, 188));
+        font-family: "Segoe UI", Arial, sans-serif;
+        height: 100vh;
+    }
+
+    .container {
+        display: block;
+        width: 40%;
+        /* border: 1px solid rgb(101, 102, 103); */
+        box-shadow: 0 0 5px rgb(175, 176, 177);
+        border-radius: 10px;
+        margin: auto;
+        padding: 10px;
+    }
+
+    #title {
+        text-align: center;
+    }
+
+    #form-input {
+        /* background-color: #fff; */
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+        padding: 5px;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+    }
+
+    label {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    input {
+        width: 100%;
+        padding: 2px;
+        margin-bottom: 5px;
+        border: 1px solid rgb(182, 182, 195);
+    }
+
+    input:focus {
+        outline: 0;
+    }
+
+    #btn-div {
+        width: 100%;
+        margin: auto;
+    }
+
+    #btn {
+        width: 100%;
+        background: linear-gradient(125deg, rgb(58, 133, 132), rgb(138, 138, 209));
+        border: none;
+        border-radius: 5px;
+        opacity: 0.8;
+        padding: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .input-control.success input {
+        border: 2px solid #09c372;
+    }
+
+    .input-control .error {
+        color: red;
+    }
+
+    .input-control .error input {
+        border-color: red;
+    }
+
+    #submittedMsg {
+        text-align: center;
+        display: none;
+        padding: 60px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div id="title">
+            <h1>Login Form</h1>
+        </div>
+        <form action="" id="form-input">
+            <div class="input-control">
+                <label for="name">Username</label>
+                <input type="text" id="name">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">E-Mail</label>
+                <input type="email" id="email">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="pass">Password</label>
+                <input type="password" id="pass">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="pass">Password Again</label>
+                <input type="password" id="pass2">
+                <div class="error"></div>
+            </div>
+
+            <div id="btn-div">
+                <button type="submit" id="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div id="submittedMsg">
+        <h1>Your form is submitted </h1>
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>

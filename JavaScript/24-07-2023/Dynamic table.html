@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic table</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    table {
+        margin-top: 5px;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th,td{
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+            </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+    </table>
+    <div class="target"></div>
+    <script>
+        let userData = [
+            {
+                id: 432,
+                first_name: "Asd",
+                last_name: "paerl",
+                email: "abc@gmail.com",
+                phone: "+919394099203"
+            },
+            {
+                id: 342,
+                first_name: "dsf",
+                last_name: "paerl",
+                email: "sdf@gmail.com",
+                phone: "+919394099089"
+            },
+            {
+                id: 765,
+                first_name: "dfgf",
+                last_name: "dfg",
+                email: "muyjgh@gmail.com",
+                phone: "+919394054345"
+            },
+            {
+                id: 123,
+                first_name: "sdxfg",
+                last_name: "gdfd",
+                email: "werrew@gmail.com",
+                phone: "+915464569203"
+            },
+        ]
+        let tableBody = document.getElementById('table-body');
+        function dynamicTable() {
+            let rows = '';
+            userData.forEach((user) => {
+                rows += `
+                <tr>
+                    <td>${user.id}</td>
+                    <td>${user.first_name}</td>
+                    <td>${user.last_name}</td>
+                    <td><a href="mailto:${user.email}">${user.email}</a></td>
+                    <td>${user.phone}</td>
+                <tr>`;
+            });
+            return rows;
+        }
+        tableBody.innerHTML = dynamicTable();
+    </script>
+</body>
+</html>

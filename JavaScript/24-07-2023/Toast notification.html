@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Notification</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #btn{
+        border: none;
+        background-color: cadetblue;
+        color: #fff;
+        padding: 20px;
+        font-size: 30px;
+    }
+    #text-container{
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+        color: #fff;
+    }
+</style>
+<body>
+    <div class="container">
+        <button id="btn">Show Notification</button>
+        <div id="text-container"></div>
+    </div>
+    <script>
+        function getRandomMessage(){
+            let message =['Hi there','Have a nice day!','Thanks!'];
+            let randomText = Math.floor(Math.random()*message.length);
+            return message[randomText]
+        }
+        function showMess(msg){
+            let textContainer = document.getElementById('text-container');
+            let create = document.createElement('div');
+            create.classList.add('toast');
+            create.textContent = msg;
+            textContainer.appendChild(create);
+
+            setTimeout(()=>{
+                create.remove();
+            },5000);
+        }
+        let taostBtn = document.getElementById('btn');
+        taostBtn.addEventListener('click',()=>{
+            let random = getRandomMessage();
+            showMess(random);
+        })
+    </script>
+</body>
+</html>

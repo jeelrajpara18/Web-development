@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        height: 100vh;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #clock {
+        font-size: 2rem;
+        color: #fff;
+        text-align: center;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        padding: 1.5rem;
+
+    }
+</style>
+
+<body>
+
+    <div id="clock"></div>
+    <script>
+        function showTime() {
+            let time = new Date();
+            let hours = time.getHours();
+            let mini = time.getMinutes();
+            let sec = time.getSeconds();
+            let mili = time.getMilliseconds();
+            let am_pm = hours >= 12 ? "PM" : "AM";
+            if (hours < 10) {
+                hours = "0" + hours;
+            }
+            if (mini < 10) {
+                mini = "0" + mini;
+            }
+            if (sec < 10) {
+                sec = '0' + sec;
+            }
+            if (mili < 10) {
+                mili = "00" + mili;
+            } else if (mili < 100) {
+                mili = '0' + mili;
+            }
+            let currentTime = hours + ':' + mini + ':' + sec + ':' + mili + " " + am_pm;
+            document.getElementById("clock").innerHTML = currentTime;
+        }
+        setInterval(showTime, 1)
+    </script>
+</body>
+</html>

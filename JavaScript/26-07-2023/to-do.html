@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        /* height: 100vh;
+        width: 100vw; */
+        background-color: bisque;
+    }
+
+    .container {
+        margin: 10px;
+    }
+
+    #input-box {
+        background-color: rgb(173, 129, 213);
+        width: 30%;
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 10px;
+    }
+
+    input {
+        border: none;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 20px;
+    }
+
+    #btn {
+        border: none;
+        padding: 10px;
+        background-color: black;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    #list {
+        list-style-type: none;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+
+    li {
+        position: relative;
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    ul li .fa-solid {
+        position: absolute;
+        left: 70%;
+        top: 10px;
+        color: #000;
+        padding: 2px;
+    }
+
+    ul li .fa-solid:hover {
+        background-color: rgb(128, 139, 150);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>To Do List</h1>
+        <div id="input-box">
+            <form action="" id="input-form">
+                <input type="text" id="input-text" placeholder="Add Your Task">
+                <button type="submit" id="btn">Submit</button>
+            </form>
+            <ul id="list"></ul>
+        </div>
+    </div>
+    <script>
+        let inputText = document.getElementById('input-text');
+        let listItem = document.getElementById('list')
+
+        function addTask() {
+            let value = inputText.value.trim();
+            if (value.length >= 3) {
+                let isConfirm = confirm('Do you want to add task');
+                if (isConfirm) {
+                    let li = document.createElement('li');
+                    li.innerText = value;
+                    listItem.appendChild(li);
+
+                    //delete element 
+                    let del = document.createElement('span');
+                    del.innerHTML = '<i class="fa-solid fa-xmark"></i>'
+                    li.appendChild(del);
+                    listItem.addEventListener('click', (e) => {
+                        event.preventDefault();
+                        if (e.target.tagName == 'I') {
+                            e.target.parentElement.parentElement.remove();
+                        }
+        
+                    })
+                }
+                inputText.value = '';
+                
+            }
+
+        }
+
+        let form = document.getElementById('input-form');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            addTask();
+        })
+
+        
+    </script>
+</body>
+
+</html>

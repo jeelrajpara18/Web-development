@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: rgb(133, 99, 165);
+    }
+    .container{
+        margin: 10px;
+    }
+    input{
+        padding: 10px;
+        border-radius: 20px;
+        border: none;
+    }
+    #btn{
+        border: none;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #000;
+        color: #fff;
+    }
+    #list{
+        position: relative;
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 20px;
+        list-style-type:none ;
+    }
+    li span{
+        position: absolute;
+        top: 12px;
+        left: 100px;
+        color: #000;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>To Do List</h1>
+        <form action="" id="input-form">
+            <input type="text" placeholder="Enter your task" id="inputText">
+            <button type="submit" id="btn">Submit</button>
+        </form>
+        <ul id="list"></ul>
+    </div>
+    <script>
+        let inputText = document.getElementById('inputText');
+        let list = document.getElementById('list');
+        let arr= [];
+        function addTask(){
+            arr.push(inputText.value);
+        }
+        function printTask(){
+            let value = inputText.value.trim();
+            if(value.length >= 3){
+                let isConfirm = confirm('Do you want to print the task');
+                if(isConfirm){
+                    for(let i =0;i<arr.length;i++){
+                        let li = document.createElement('li');
+                        li.textContent = arr[i];
+                        list.appendChild(li);
+                    }
+                }
+            }
+            inputText.value = '';
+        }
+        let form = document.getElementById('input-form');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            addTask();
+            printTask();
+            
+        })
+    </script>
+</body>
+</html>

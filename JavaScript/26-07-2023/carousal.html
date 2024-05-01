@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousal</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        margin: auto;
+        margin-top: 10px;
+        border: 1px solid black;
+        height: 500px;
+        width: 60%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: 1s all;
+    }
+
+    .button-main {
+        text-align: center;
+    }
+
+    .button-main button {
+        border: none;
+        padding: 5px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <img src="https://picsum.photos/seed/picsum/1000/500" class="slide" alt="">
+        <img src="https://picsum.photos/seed/picsum/1000/500" class="slide" alt="">
+        <img src="https://picsum.photos/seed/picsum/1000/500" class="slide" alt="">
+        <img src="https://picsum.photos/seed/picsum/1000/500" class="slide" alt="">
+    </div>
+    <div class="button-main">
+        <button onclick="goPrev()">Prev</button>
+        <button onclick="goNext()">Next</button>
+    </div>
+    <script>
+        let slider = document.querySelectorAll('.slide')
+        let counter = 0;
+        slider.forEach((slide, index) => {
+            slide.style.left = `${index * 100}%`
+        })
+        function goNext() {
+            counter++;
+            slideImage();
+        }
+
+        function goPrev() {
+            counter--;
+            slideImage();
+        }
+        function slideImage() {
+            slider.forEach((slide) => {
+                slide.style.transform = ` translateX(-${counter * 100}%)`
+            })
+        }
+
+    </script>
+</body>
+
+</html>
