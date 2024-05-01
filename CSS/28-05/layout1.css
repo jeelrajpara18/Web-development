@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+   font-family: "Segoe UI",Arial,sans-serif;
+   letter-spacing: 2px;
+}
+nav{
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    width: 95%;
+    margin: auto;
+}
+.side-1{
+    display: flex;
+    gap: 2rem;
+}
+ul{
+   list-style-type: none;
+}
+.container-1{
+   min-height: 100vh;
+   position: relative; 
+   
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+.cont-1-text{
+    position: absolute;
+    top: 80%;
+    color: #fff;
+    left: 40%;
+    text-align: center;
+}
+.container-3{
+    min-height: 100vh;
+    width: 60%;
+    margin: auto;
+}
+.mb-1{
+    margin-bottom: 1rem;
+}
+.cont-3-sec-1{
+    text-align: center;
+}
+.cont-3-sec-3{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 1rem;
+}
+.sec{
+    padding-top: 3rem;
+    text-align: center; 
+    width: 25%;
+}
+.main-cont-4{
+    min-height: 100vh;
+    background-color: #000;
+}
+.container-4{
+    color: #fff;
+    width: 70%;
+    margin: auto;
+}
+.cont-4-sec-1{
+    text-align: center;
+    padding-top: 30px;
+    
+}
+.grey{
+    color: slategray;
+}
+.cont-4-sec-2{
+    width: 100%;
+    /* margin: auto; */
+    background-color: #fff;
+    color: #000;
+}
+.line{
+    border-bottom: 1px solid grey;
+    padding: 2px;
+}
+.span-1{
+    background-color: red;
+    color: #fff;
+    margin-left: 10px;
+}
+.span-2{
+    background-color: #000;
+    color: #fff;
+    float: right;
+    padding: 2px;
+    border-radius:80%;
+}
+.cont-4-sec-3{
+    display: flex;
+    gap: 1rem;
+    padding-top:px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.sec-3-side-1{
+   background-color: #fff;
+   color: #000;
+}
+.btn-primary{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+.side-1-text{
+    padding-left: 10px;
+}
+.container-5{
+    min-height: 60vh;
+    padding-top: 20px;
+}
+.cont-5-sec-1{
+    text-align: center;
+}
+.cont-5-sec-2{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+.btn-secondary{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    margin-left: 90%;
+}
+.footer{
+    height: 10vh;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: slategray;
+}
+

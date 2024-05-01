@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(137, 137, 192);
+    }
+
+    .box {
+        border: 1px solid black;
+        position: relative;
+        margin-left: 40%;
+        margin-top: 15%;
+        padding: 30px;
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+        font-size: 30px;
+        z-index: 1;
+    }
+    .box::after{
+        content: "";
+        position: absolute;
+        top: 100%;
+        background-color: yellow;
+        height: 100%;
+        width: 25%;
+        right: 25%;
+        transition: 1s;
+        z-index: -1;
+    }
+    .box::before{
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        background-color: yellow;
+        height: 100%;
+        width: 25%;
+        left: 25%;
+        transition: 1s;
+        z-index: -1;
+    }
+    .span::after{
+        content: "";
+        position: absolute;
+        left: -25%;
+        background-color: yellow;
+        height: 100%;
+        width: 25%;
+        bottom: 0%;
+        transition: 1s;
+        z-index: -1;
+    }
+    .span::before{
+        content: "";
+        position: absolute;
+        right: -25%;
+        background-color: yellow;
+        height: 100%;
+        width: 25%;
+        bottom: 0%;
+        transition: 1s;
+        z-index: -1;
+    }
+    .box:hover:before{
+        bottom: 0%;
+    }
+    .box:hover:after{
+        top: 0;
+    }
+    .box:hover .span::before{
+        right: 0%;
+    }
+    .box:hover .span::after{
+          left: 0%;
+    }
+</style>
+
+<body>
+    <button class="box">
+        <span class="span"></span>
+        Hover me
+    </button>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+}
+.sec-1{
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 20px;
+}
+.sec-2-main{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.fa-solid{
+    border-radius: 50%;
+    background-color: #ccc;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    color: #fff;
+    padding: 2px;
+}
+.text-1{
+    display: flex;
+    gap: 1rem;
+}
+.btn-primary{
+    background-color: lightgreen;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2px;
+}
+.text-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.grey{
+    color: grey;
+    font-size: 12px;
+}
+.blue{
+    color: blue;
+}
+.sec-3-main{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.sec-2-1{
+    width: 19%;
+}
+.text-cont-3-1{
+    display: flex;
+    gap: 1rem;
+}
+.btn-second{
+   padding: 2px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+.btn-third{
+    color: red;
+    border: 1px solid #ccc;
+    /* background-color: rgb(203, 129, 129); */
+    border-radius: 5px;
+    padding: 2px;
+}
+.sec-4{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 2rem;
+}
+.sec-5-main{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.sec-5-1{
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: lightpink;
+}
+.sec-5-1-1{
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+}
+.logo-text{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.logo{
+    background-color: bisque;
+    height: 30px;
+    width: 30px;
+}
+.sec-5-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.sec-5-3-main{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.sec-5-3-2{
+    display: flex;
+    gap: 5px;
+}

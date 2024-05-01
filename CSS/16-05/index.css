@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    height: 80%;
+    width: 95%;
+    display: flex;
+}
+.img1{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.sec1-text{
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    margin: 2px;
+}
+button{
+    background-color: rgb(59, 160, 193);
+    padding: 10px;
+}
+.sec-1{
+    height: 100%;
+    width: 50%;
+}
+.img2{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.sec2-text{
+    position: absolute;
+    top: 43%;
+    color: white;
+    margin: 2px;
+    font-size: small;
+}
+.sec-2{
+    height: 50%;
+    width: 27.5%;
+}
+.sec-2-1{
+    height: 100%;
+    width: 100%;
+}
+.sec-2-2{
+    height: 100%;
+    width: 100%;
+}
+.sec3-text{
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    margin: 2px;
+    font-size: small;
+}
+.sec-3-text{
+    position: absolute;
+    bottom: 12%;
+    color: white;
+    margin: 2px;
+    font-size: smaller;
+}
+.sec-3{
+    height: 50%;
+    width: 27.5%;
+}
+.sec-3-1{
+    height: 100%;
+    width: 100%;
+}
+.sec-3-2{
+    height: 100%;
+    width: 100%;
+}

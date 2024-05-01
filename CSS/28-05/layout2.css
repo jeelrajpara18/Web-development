@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    /* height: 100vh; */
+    /* width: 100vw; */
+    font-family: "Segoe UI",Arial,sans-serif;
+    letter-spacing: 2px;
+    background-color: lightgray;
+}
+a{
+    color: #fff;
+}
+a:hover{
+    background-color: #fff;
+    color: #000;
+}
+header{
+    background-color: #000;
+    color: #fff;
+}
+.navbar{
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+}
+.nav-cont-1{
+    display: flex;
+    gap: 2rem;
+}
+img{
+    max-width: 100%;
+    object-fit: cover;
+}
+mark{
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+}
+.container-1{
+    text-align: center;
+    min-height: 30vh;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.container-2{
+    min-height: 100vh;
+    position: relative;
+}
+.cont-2-text{
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    color: #fff;
+}
+.XL{
+    font-size: 30x;
+}
+.XXL{
+    font-size: 50px;
+}
+.btn-primary{
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 12px 24px;
+    font-size: 20px;
+}
+.mb-1{
+    margin-bottom: 1rem;
+}
+.container-3-main{
+    min-height: 100vh;
+    
+}
+.container-3{
+    display: flex;
+    gap: 1rem;
+}
+.cont-3-sec-1{
+    background-color: #fff;
+    width: 60%;
+    margin: 5px;
+    height: 100%;
+   
+}
+.text-cont-1{
+    padding-top: 20px;
+    text-align: center;
+}
+.text-cont-2{
+    font-size: 20px;
+    padding-left: 10px;
+}
+.btn-second{
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    margin-left: 10px;
+} 
+.btn-third{
+    font-size: 20px;
+    padding: 10px;
+    border: none; 
+    background-color: #000;
+    color: #fff;
+    float: right;
+}
+.cont-3-sec-2{
+   width: 40%;
+   margin: 5px;
+}
+.cont-3-sec-2 > img{
+    width: 100%;
+    object-fit: cover;
+}
+.cont-3-text-1{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+.cont-3-2{
+    display: flex;
+    border-top: 1px solid grey;
+    margin-top: 20px;
+}
+.cont-3-2-1{
+    padding: 20px;
+}
+.cont-3-2-2{
+    padding: 20px;
+    font-size:20px;
+   
+}
+.cont-3-2-1 > img{
+    max-width: 50%;
+}
+ul{
+    list-style-type: none;
+}
+.cont-3-sec-2-1{
+    background-color: #fff;
+}
+.box > img{
+    width: 15%;
+}
+.box{
+    display: flex;
+    border-bottom: 1px solid grey;
+    padding: 10px 10px;
+}
+.highlight{
+    background-color: #000;
+    color: #fff;
+    margin-top:5px;
+    padding: 5px;
+}
+.picture{
+    height: 200px;
+    background-color: #fff;
+    padding-top: 10px;
+}
+.logo{
+    height: 180px;
+    width: 450px;
+    margin: auto;
+    background-color:lightgray;
+    /* padding: 10px; */
+}
+.container-4-main{
+    min-height: 100vh;
+}
+.container-4{
+    display: flex;
+    gap: 1rem;
+}
+.cont-4-sec-1{
+    width: 60%;
+    
+    margin: 10px;
+    height: 100%;
+}
+.text-cont-1{
+    background-color: #fff;
+}
+.cont-4-text{
+    background-color: #fff;
+   
+}
+.container-4-sec-1-2{
+   background-color: #fff;
+}
+.cont-5-text{
+    text-align: center;
+}
+.cont-4-sec-2{
+    width: 40%;
+    margin: 5px;
+    
+}
+.cont-4-text{
+    font-size: 15px;
+}
+.sub-sec-1{
+    background-color: #fff;
+    height: 100px;
+    padding: 20px;
+   
+}
+.mb-3{
+    margin-bottom: 3rem;
+}
+.style{
+    background-color: lightgray;
+    color: #000;
+}
+.sub-sec-2{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 1rem;
+}
+.sub-sec-2 > img{
+    width: 45%;
+}
+.sub-sec-3{
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+.sub-sec-4{
+    background-color: #fff;
+    padding: 20px;
+    font-size: 20px;
+}
+.btn-fourth{
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    
+}
+.foot-sec{
+    height: 10vh;
+    background-color: gray;
+    padding: 10px;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    background-color: #000;
+    padding: 5px;
+}
+

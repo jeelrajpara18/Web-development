@@ -1,0 +1,156 @@
+`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+      
+      .blue{
+        color: rgb(110, 110, 197);
+      }
+      .mb-1{
+        margin-bottom: 1rem;
+      }
+      .mb-2{
+        margin-bottom: 2rem;
+      }
+      .text-sec-1{
+        padding-left: 20px;
+        position: relative;
+      }
+      .heading::before{
+        content: "";
+        position: absolute;
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        background-color: rgb(110, 110, 197);
+        left: 0;
+        top: 5px;
+      }
+      .heading::after{
+        content: "";
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 50%;
+        background-color: #ccc;
+        left: 40%;
+        top: 50%;
+      }
+      .grey{
+        color: grey;
+      }
+      @media (max-width:870px){
+        .wrapper{
+             display: flex;
+             flex-wrap: wrap;
+             font-size: 25px;
+        }
+        .sec-1{
+            width: 50%;
+            padding: 10px;
+        }
+        .heading::after{
+            content: "";
+            position: absolute;
+            left: 35%;
+            width: 50%;
+        }
+      }
+      @media (max-width:765px){
+        .wrapper{
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .sec-1{
+          width: 50%;
+          padding: 10px;
+        }
+        .heading::after{
+          content: "";
+          position: absolute;
+          left: 50%;
+          width: 50%;
+        }
+      }
+      @media (max-width:600px){
+        .wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 25px;
+        }
+        .sec-1{
+            width: 100%;
+            padding: 5px;
+            
+        }
+        .heading::before{
+            content: "";
+            position: absolute;
+            top: 10px;
+        }
+        .heading::after{
+            content: "";
+            position: absolute;
+            left: 40%;
+            width: 50%;
+        }
+      }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sec-1">
+            <div class="text-sec-1 mb-2">
+                <p class="heading blue">Aug 2021</p>
+               
+            </div>
+            <div class="text-sec-2">
+                <h2 class="mb-1">Founded Company</h2>
+                <p class="grey">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam doloribus ex tempore necessitatibus voluptatum itaque deleniti eveniet! !</p>
+            </div>
+        </div>
+        <div class="sec-1">
+            <div class="text-sec-1 mb-2">
+                <p class=" heading blue">Aug 2021</p>
+            </div>
+            <div class="text-sec-2">
+                <h2 class="mb-1">Founded Company</h2>
+                <p class="grey">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam doloribus ex tempore necessitatibus voluptatum itaque deleniti eveniet! </p>
+            </div>
+        </div>
+        <div class="sec-1">
+            <div class="text-sec-1 mb-2">
+                <p class="heading blue">Aug 2021</p>
+            </div>
+            <div class="text-sec-2">
+                <h2 class="mb-1">Founded Company</h2>
+                <p class="grey">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam doloribus ex tempore necessitatibus voluptatum itaque deleniti eveniet!!</p>
+            </div>
+        </div>
+        <div class="sec-1">
+            <div class="text-sec-1 mb-2">
+                <p class="heading blue">Aug 2021</p>
+            </div>
+            <div class="text-sec-2">
+                <h2 class="mb-1">Founded Company</h2>
+                <p class="grey">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam doloribus ex tempore necessitatibus voluptatum itaque deleniti eveniet! !</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

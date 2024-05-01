@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    background-color: rgb(133, 188, 157);
+    height: 100%;
+    width: 100%;
+}
+.header{
+    display: flex;
+    position: relative;
+    padding: 5px;
+    justify-content: space-between;
+}
+.text1{
+    background-color: white;
+    border-radius: 40px;
+    padding: 30px;
+    font-size: 15px;
+}
+.circle-main{
+    display: flex;
+}
+.circle{
+   
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: slategray;
+}
+
+.main-box{
+    display: flex;
+    gap: 1rem;
+    overflow: hidden;
+}
+.box1{
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid black;
+    
+}
+img{
+    height: 100%;
+    max-width: 100%;
+    object-fit:cover;
+}
+
+.logo{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    background-color: white;
+    padding: 7px;
+    
+}

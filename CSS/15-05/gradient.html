@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient property</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+    .linear-gradient{
+        background-image: linear-gradient( to bottom left,lightblue,green,red);
+        height: 33.33%;
+    }
+    .radial-gradient{
+        background-image: radial-gradient(circle,pink ,blue ,red );
+        height: 33.33%;
+    }
+    .conic-gradient{
+        background-image: conic-gradient( yellow 90deg, green 120deg,pink 210deg,violet 180deg,navy 360deg);
+        height: 33.33%;
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+    }
+</style>
+<body>
+    <div class="linear-gradient"></div>
+    <div class="radial-gradient"></div>
+    <div class="conic-gradient"></div>
+</body>
+</html>

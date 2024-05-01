@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    width: 100vw;
+    background-color: rgb(170, 183, 188);
+}
+.wrapper{
+    width: 90%;
+    margin: auto;
+    height: 90%;
+}
+.heading{
+    color: #fff;
+    margin: 1rem;
+    font-size: 20px;
+}
+.container-main{
+    display: flex;
+    margin: 1rem;
+}
+.sec-1{
+    width: 30%;
+}
+#hover{
+    background-color: blue;
+    color: #fff;
+    border-radius: 5px;
+}
+.sec-2{
+    display: flex;
+    margin-left: 1rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.sec-2-1{
+     border-right: 1px solid grey;
+     padding: 5px;
+}
+.side-text{
+    padding: 2px;
+}

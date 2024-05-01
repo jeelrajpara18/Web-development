@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+    .col>img {
+        width: 60%;
+    }
+
+    .fa-brands {
+        color: #fff;
+        padding: 10px;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark text-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAIVBMVEX4+vtffZWhs8HL1d3t8fRzjaLd5OlohJu2xM+AmKuNorOyLx+pAAADk0lEQVR4nO2c7XaDIAyG63fr/V/wju2yViA1cBITd97n57pZIskDAu52AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjJn7depUWNNLb9ed1n44I4zhoRPExpxc+04fTHfrMMZVL4yuTy++vD9bR9M4ZqWcerKkbe0/P53S7lJFM44uTZ95//Fk2CeaedU9jq6eqUCNQTOOLlVTfnWzilf0FaPePVmfKTEXmtPMwqr3A6N67wtf1cw39bK/pIRmqWdKKt4lo3LXdO+Beilcm0BKnd/IoXpfLDaBKPZIWsWM2I16RM++AvU+MfKvmrWySVZJvRtG1lIb2EXq3bB6LlGqdpl6O7MS4TOgkvQ+szMGs7kWmwJVCNVbKCU9VLpEqF7DDrl9MXAvJmseNzxZzX2fsHevXZRsL9supbATx9YZN1t3ds+HT1jDtH4vp97seUUbdnhvywT2xhgN6m9GrjbbRi8uVS2XUH5hi7PFli7qJTgFt4xfLuolFNPaSb0EW++1ovFSLzFz31+bEOwdsa/0F0oZ4adeglVwXb1z1jhBvQRnzaXmXrqql2AVPLBkt9lVvUT9MnA28LOFZj3J2lO9opJ6wFu9h+1gyPLFXb1E5VNvmi/+6v2jagE1a14A9RI1y3XZ+ML+8TmTrD0V2yUxFhw45AqOql5CrOCo6j1sz1Hz2AWH8yv9hVDBgdVLiLZ+IquXkCg4tnoJgYJjq5dgn3r55gVTL3GoYLF6/Sr91a6DKZdYvafPelMO6l2s3jOfb8t8VbBcvR5N3/NtypWNDCHVS3yp9zRf2IpyVS/BT7muol5CvtHAdYizegn5wiMTstusN0W+11uWlr96CXbhUXQ4IIB6Cfleb2mWGUG9hHivd8x/JYR6CVbBghXGGOolxArOQg6i3j9aFRxGvUSrguOolxAft9mFHEi9RJuCI6mXECv4I+RQ6iVYBWfp8w45lnqJegVHUy8hPm5zZ34ehVoFx1MvUafggOol5BsfW8gR1UvUKNhpV0eG/MRjH1S9hPikzBhVvYTmiUdXAu6rNaJ24tEb+VNvdJzPwOqhfOjcEYOXTJxweGnKBvWXTNyAgsOh+pKJK6yCr1bv/1/BlxMXp+CreYtT8OUy61Z+xHpcrdY3CoOJ+eueNgxpJMvVJvLEuM+uS+bVL/f3wGj/b+VsGfp1Ws76R38AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMz5AR3+Hw31VwVvAAAAAElFTkSuQmCC"
+                    alt="Bootstrap" width="40" height="30">
+            </a>
+            <a class="navbar-brand text-white" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Band</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white">Tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About us
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </div>
+        </div>
+    </nav>
+    <img src="https://www.w3schools.com/w3images/chicago.jpg" class="img-fluid" alt="... " width="100%">
+    <div class="container text-center">
+        <h1>The Band</h1>
+        <p class="text-muted">We love music</p>
+    </div>
+    <div class="container">
+        <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Voluptatem ipsum nam nobis eaque aspernatur. Quibusdam, deserunt ea eos
+            mollitia labore, dolorem similique praesentium atque laborum facere quos ab magnam incidunt unde fuga quia
+            dolores consequuntur, deleniti ullam nam dignissimos! Quod alias laborum corrupti ullam asperiores quos
+            iusto commodi mollitia omnis accusantium deleniti, error magnam id qui, amet eveniet repudiandae obcaecati
+            optio eius quam. Iure provident dolor dolorem ab tempora ratione doloremque modi quisquam possimus, quaerat
+            architecto quos, ex perspiciatis fugiat. Suscipit quas similique ipsum ea corporis debitis amet cum
+            distinctio atque animi, sint nemo laboriosam quia laudantium sit dolorum. Harum.</p>
+    </div>
+    <div class="container  text-center">
+        <div class="row gx-5">
+            <div class="col">
+                <div class="p-3">
+                    <p>Name</p>
+                    <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="">
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3">
+                    <p>Name</p>
+                    <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="">
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3">
+                    <p>Name</p>
+                    <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container bg-dark">
+        <div class="row ">
+            <div class="col-sm-8">
+                <p class="h2 text-center text-white">Tittle heading</p>
+                <div class="row ">
+                    <div class="col p-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://images.unsplash.com/photo-1685297965194-5eb9b8d51a05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDd8Ym84alFLVGFFMFl8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://images.unsplash.com/photo-1685297965194-5eb9b8d51a05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDd8Ym84alFLVGFFMFl8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://images.unsplash.com/photo-1685297965194-5eb9b8d51a05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDd8Ym84alFLVGFFMFl8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://images.unsplash.com/photo-1685297965194-5eb9b8d51a05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDd8Ym84alFLVGFFMFl8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p class="h2 text-white text-center">
+                    Contact us
+                </p>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label text-white">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label text-white">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <label for="exampleDataList" class="form-label text-white">Choose your city</label>
+                <select class="form-select form-select-m mb-3" aria-label=".form-select-lg example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">San fransisco</option>
+                    <option value="2">New York</option>
+                    <option value="3">California</option>
+                </select>
+                <div class="mb-3">
+                    <p class="h4 text-white">Text us on:</p>
+                    <p>
+                        <i class="fa-brands fa-facebook "></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </p>
+                    <p class="text-white "><i class="fa-solid fa-phone" style="padding: 10px; font-size: 20px;">
+                        </i> 1800-2325-8900</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
