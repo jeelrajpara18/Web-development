@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+
 const variants = {
   open: {
     transition: {
@@ -12,7 +13,6 @@ const variants = {
     },
   },
 };
-
 const itemVariants = {
   open: {
     y: 0,
@@ -25,23 +25,23 @@ const itemVariants = {
 };
 
 const Links = () => {
-  const items = ["HomePage", "Skills", "Porfolio", "Contact", "About"];
+  const items = ["Homepage", "Skills", "Project", "Contact"];
+
   return (
-    <>
-      <motion.div className="links" variants={variants}>
-        {items.map((item) => (
-          <motion.a
-            href={`#${item}`}
-            key={item}
-            variants={itemVariants}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            {items}
-          </motion.a>
-        ))}
-      </motion.div>
-    </>
+    <motion.div className="links" variants={variants}>
+      {items.map((item) => (
+        <motion.a
+          href={`#${item}`}
+          key={item}
+          variants={itemVariants}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          {item}
+        </motion.a>
+      ))}
+    </motion.div>
   );
 };
+
 export default Links;

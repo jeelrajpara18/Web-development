@@ -2,15 +2,17 @@
 
 .navbar {
   height: 100px;
-  padding: 10px;
+  // padding: 10px;
 
   .wrapper {
-    // max-width: 1366px;
+    max-width: 1366px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    width: 80%;
+    margin: auto;
 
     @include mobile {
       justify-content: flex-end;
@@ -34,8 +36,8 @@
       }
 
       img {
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
         object-fit: cover;
       }
     }
