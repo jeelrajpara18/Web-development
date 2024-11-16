@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(3, 3, 29);
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.header{
+    font-size: 30px;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+.form-input{
+    display: flex;
+    gap:10px;
+    margin-top: 2rem;
+}
+.btn-main{
+    padding: 10px;
+    border: none;
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+input{
+    display: block;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+li{
+    border-bottom: 1px solid white;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-top:10px;
+    font-size: 18px;
+}
+.btn-remove{
+    padding: 5px;
+    border: none;
+    background-color: rgb(246, 70, 70);
+}
